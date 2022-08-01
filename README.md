@@ -1,7 +1,7 @@
 ## Portfolio-Website
 Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 
-<a href="https://lifecodess.cf" target="_blank">**Visit Now** 🚀</a>
+<!-- <a href="https://lifecodess.cf" target="_blank">**Visit Now** 🚀</a>
 
 
 ## 📌 Tech Stack
@@ -27,4 +27,4 @@ If you want to contact me, you can reach me through below handles.
 © 2021 Jigar Sable
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) -->
