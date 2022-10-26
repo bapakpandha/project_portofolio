@@ -1,0 +1,22 @@
+[ 
+    {
+        "id": 1,
+        "name": "Portfolio Website",
+        "desc": "Website yang berisi Portofolio saya. Website ini saya buat sendiri dengan menggunakan bantuan beberapa javascript untuk mempercantik tampilan.",
+        "image": "../assests/images/projects/portfolio1.PNG",
+        "links": {
+            "view": "#",
+            "code": "#"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Portfolio Website",
+        "desc": "Website yang berisi Portofolio saya. Website ini saya buat sendiri dengan menggunakan bantuan beberapa javascript untuk mempercantik tampilan.",
+        "image": "../assests/images/projects/portfolio1.PNG",
+        "links": {
+            "view": "#",
+            "code": "#"
+        }
+    }
+]

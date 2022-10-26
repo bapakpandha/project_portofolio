@@ -115,7 +115,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="${project.image}" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -134,7 +134,7 @@ function showProjects(projects) {
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 15,
+        max: 5,
     });
     // <!-- tilt js effect ends -->
 
