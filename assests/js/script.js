@@ -42,11 +42,11 @@ document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
         document.title = "Portfolio | Ahmad Rifqi Maulana";
-        $("#favicon").attr("href","assests/images/favicon.png");
+        $("#favicon").attr("href","./assests/images/favicon.png");
     }
     else {
         document.title = "Come Back To Portfolio";
-        $("#favicon").attr("href","assests/images/favhand.png");
+        $("#favicon").attr("href","./assests/images/favhand.png");
     }
 });
 
