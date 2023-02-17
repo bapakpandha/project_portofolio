@@ -1,5 +1,5 @@
 [ 
-    {
+    {   
         "id": 1,
         "name": "Portfolio Website",
         "desc": "Website yang berisi Portofolio saya. Website ini saya buat sendiri dengan menggunakan bantuan beberapa javascript untuk mempercantik tampilan.",
@@ -7,7 +7,8 @@
         "links": {
             "view": "#",
             "code": "#"
-        }
+        },
+        "category": "webdev"
     },
     {
         "id": 2,
@@ -17,6 +18,29 @@
         "links": {
             "view": "#",
             "code": "#"
-        }
+        },
+        "category": "webdev"
+    },
+    {
+        "id": 3,
+        "name": "Sulaimaniyah Landing Page",
+        "desc": "It's a Yayasan Tahfidz Sulaimaniyah Yogyakarta's Internet landing page using basic HTML, CSS and JS and apply it to local Mikrotik",
+        "image": "./assests/images/projects/rifqi-sulaimaniyah_landing_page.png",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "webdev"
+    },
+    {
+        "id": 4,
+        "name": "Prototype of Automatic Milk Shaker & Heater",
+        "desc": "Basically, It's a Final project of Instrumentation Practice Subject in my Lecture. I and my group doing final project that given by instructor based on real industries problem",
+        "image": "./assests/images/projects/rifqi-responsi_psi.jpg",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "instrumentation"
     }
 ]

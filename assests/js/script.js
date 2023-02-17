@@ -110,10 +110,12 @@ function showSkills(skills) {
 }
 
 function showProjects(projects) {
-    let projectsContainer = document.querySelector("#work .box-container");
-    let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
-        projectHTML += `
+
+    // <!-- Project WebDev -->
+    let WebdevProjectsContainer = document.querySelector("#work .webdev .box-container");
+    let WebdevProjectHTML = "";
+    projects.slice(0, 10).filter(project => project.category == "webdev").forEach(project => {
+        WebdevProjectHTML += `
         <div class="box tilt">
       <img draggable="false" src="${project.image}" alt="project" />
       <div class="content">
@@ -130,7 +132,30 @@ function showProjects(projects) {
       </div>
     </div>`
     });
-    projectsContainer.innerHTML = projectHTML;
+    WebdevProjectsContainer.innerHTML = WebdevProjectHTML;
+
+    // <!-- Project Instrumentation -->
+    let InstruProjectsContainer = document.querySelector("#work .instrumentation .box-container");
+    let InstruProjectHTML = "";
+    projects.slice(0, 10).filter(project => project.category == "instrumentation").forEach(project => {
+        InstruProjectHTML += `
+        <div class="box tilt">
+      <img draggable="false" src="${project.image}" alt="project" />
+      <div class="content">
+        <div class="tag">
+        <h3>${project.name}</h3>
+        </div>
+        <div class="desc">
+          <p>${project.desc}</p>
+          <div class="btns">
+            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>`
+    });
+    InstruProjectsContainer.innerHTML = InstruProjectHTML;
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
