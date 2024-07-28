@@ -80,7 +80,7 @@
         "id": 8,
         "name": "NLP Model using Tensorflow",
         "desc": "Basically, It's a Final project of Machine Learning Development class that i've done from Program Beasiswa Lintasarta Cloudeka Machine Learning. This model can classify an english sentence into sadness, joy, anger, or surprise",
-        "image": "./assests/images/projects/rifqi-NLP_tensorflow",
+        "image": "./assests/images/projects/rifqi-NLP_tensorflow.webp",
         "links": {
             "view": "#",
             "code": "#"
