@@ -42,5 +42,49 @@
             "code": "#"
         },
         "category": "instrumentation"
+    },
+    {
+        "id": 5,
+        "name": "Custom CSS OJS Journal Style",
+        "desc": "A custom CSS project I undertook to modernize and beautify the web pages of a journal using OJS at a university in Indonesia.",
+        "image": "./assests/images/projects/rifqi-moderasi.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "webdev"
+    },
+    {
+        "id": 6,
+        "name": "Pustabooks",
+        "desc": "Basically, It's a Final project of Dicoding Front End Developer class. It's static responsive beautiful website that allow user to add, store, and read books on online bookshelf",
+        "image": "./assests/images/projects/rifqi-pustabooks.webp",
+        "links": {
+            "view": "bapakpandha.github.io/Pustabooks",
+            "code": "#"
+        },
+        "category": "webdev"
+    },
+    {
+        "id": 7,
+        "name": "Bookshelf API",
+        "desc": "Basically, It's a Final project of Dicoding Backend Developer class that I'm attend from AWS Back-End Academy. This API can accept POST method to save books, GET method to get all books, PUT method, and etc.",
+        "image": "./assests/images/projects/rifqi-bookshelf_api.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "webdev"
+    },
+    {
+        "id": 8,
+        "name": "NLP Model using Tensorflow",
+        "desc": "Basically, It's a Final project of Machine Learning Development class that i've done from Program Beasiswa Lintasarta Cloudeka Machine Learning. This model can classify an english sentence into sadness, joy, anger, or surprise",
+        "image": "./assests/images/projects/rifqi-NLP_tensorflow",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "ml"
     }
 ]

@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["fullstack development", "Instrumentasi", "Robotik", "Desain web", "machine learning"],
+        strings: ["Web development", "Instrumentasi", "Robotik", "Desain web", "machine learning"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
@@ -156,6 +156,29 @@ function showProjects(projects) {
     </div>`
     });
     InstruProjectsContainer.innerHTML = InstruProjectHTML;
+
+        // <!-- Project MachineLearning -->
+        let MLProjectsContainer = document.querySelector("#work .machine_learning .box-container");
+        let MLProjectHTML = "";
+        projects.slice(0, 10).filter(project => project.category == "ml").forEach(project => {
+            MLProjectHTML += `
+            <div class="box tilt">
+          <img draggable="false" src="${project.image}" alt="project" />
+          <div class="content">
+            <div class="tag">
+            <h3>${project.name}</h3>
+            </div>
+            <div class="desc">
+              <p>${project.desc}</p>
+              <div class="btns">
+                <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>`
+        });
+        MLProjectsContainer.innerHTML = MLProjectHTML;
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
