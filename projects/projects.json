@@ -86,5 +86,38 @@
             "code": "#"
         },
         "category": "ml"
+    },
+    {
+        "id": 9,
+        "name": "Time Series Data Model using LTSM",
+        "desc": "It's my Second submission of Belajar Pengembangan Machine Learning in Dicoding as Program Beasiswa Cloudeka X Dicoding. This project is using LTSM architecture as main model, and historical temperature data as dataset.",
+        "image": "./assests/images/projects/rifqi-time_series.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "ml"
+    },
+    {
+        "id": 10,
+        "name": "Image Classification Model using TF-Lite",
+        "desc": "It's a Final project submission of Belajar Pengembangan Machine Learning in Dicoding as Program Beasiswa Cloudeka X Dicoding. This model is using almost 12000 images of 5 kinds flower. It can provide input images from user, and determine what kind of flower is this.",
+        "image": "./assests/images/projects/rifqi-flower_detection.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "ml"
+    },
+    {
+        "id": 11,
+        "name": "Clickbait Detection using Tensorflow Extended (TFX) and TF Serving",
+        "desc": "This is my final submission project of Machine Learning Operations (MLOps) dengan Cloudeka program at Dicoding Academy. This program was designed to detect some headlines of news and detect whether it's clickbait or not. Its deploying on docker TF server.",
+        "image": "./assests/images/projects/rifqi-TFX_MLOPS.png",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "ml"
     }
 ]
