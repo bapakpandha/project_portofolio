@@ -119,5 +119,16 @@
             "code": "#"
         },
         "category": "ml"
+    },
+    {
+        "id": 12,
+        "name": "El-Hadiith",
+        "desc": "A static website showcasing information about Hadith. This project is the final assignment of Mas Lahfiz Safutra, serving as his thesis on Hadith programming.",
+        "image": "./assests/images/projects/rifqi-elhadiith.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "webdev"
     }
 ]
