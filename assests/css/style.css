@@ -862,6 +862,7 @@ header .navbar ul li a:hover{
 }
 .work .box-container .box .content .tag h3{
   font-size: 2rem;
+  font-size: calc(1rem + 0.3vw);
 }
 .work .box-container .box:hover .content{
   top: 25%;
