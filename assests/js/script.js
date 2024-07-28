@@ -1,28 +1,28 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('#menu').click(function(){
+    $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
     });
 
-    $(window).on('scroll load',function(){
+    $(window).on('scroll load', function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
-        if(window.scrollY>60){
+        if (window.scrollY > 60) {
             document.querySelector('#scroll-top').classList.add('active');
-        }else{
+        } else {
             document.querySelector('#scroll-top').classList.remove('active');
         }
 
         // scroll spy
-        $('section').each(function(){
+        $('section').each(function () {
             let height = $(this).height();
             let offset = $(this).offset().top - 200;
             let top = $(window).scrollTop();
             let id = $(this).attr('id');
 
-            if(top>offset && top<offset+height){
+            if (top > offset && top < offset + height) {
                 $('.navbar ul li a').removeClass('active');
                 $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
@@ -30,57 +30,57 @@ $(document).ready(function(){
     });
 
     // smooth scrolling
-    $('a[href*="#"]').on('click',function(e){
+    $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop : $($(this).attr('href')).offset().top,
-        },500, 'linear')
+            scrollTop: $($(this).attr('href')).offset().top,
+        }, 500, 'linear')
     })
 });
 
 document.addEventListener('visibilitychange',
-function(){
-    if(document.visibilityState === "visible"){
-        document.title = "Portfolio | Ahmad Rifqi Maulana";
-        $("#favicon").attr("href","./assests/images/favicon.png");
-    }
-    else {
-        document.title = "Come Back To Portfolio";
-        $("#favicon").attr("href","./assests/images/favhand.png");
-    }
-});
+    function () {
+        if (document.visibilityState === "visible") {
+            document.title = "Portfolio | Ahmad Rifqi Maulana";
+            $("#favicon").attr("href", "./assests/images/favicon.png");
+        }
+        else {
+            document.title = "Come Back To Portfolio";
+            $("#favicon").attr("href", "./assests/images/favhand.png");
+        }
+    });
 
 
 // <!-- typed js effect starts -->
-    var typed = new Typed(".typing-text", {
-        strings: ["Web development", "Instrumentasi", "Robotik", "Desain web", "machine learning"],
-        loop: true,
-        typeSpeed: 50,
-		backSpeed: 25,
-		backDelay: 500,
-      });
+var typed = new Typed(".typing-text", {
+    strings: ["Web development", "Instrumentasi", "Robotik", "Desain web", "machine learning"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+});
 // <!-- typed js effect ends -->
 
 // <!-- tilt js effect starts -->
-      VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 15,
-      });
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 15,
+});
 // <!-- tilt js effect ends -->
 
 // <!--waktu menyapa starts -->
 var today = new Date();
 var hrs = today.getHours();
-    if (hrs < 11 ) {
-        greet = 'Pagi';
-    } else if (hrs >= 11 && hrs < 15) {
-        greet = 'Siang';
-    } else if (hrs >= 15 && hrs < 19) {
-        greet = 'Sore';
-    } else if (hrs >=19 && hrs <= 24) {
-        greet = 'Malam';
-    }
+if (hrs < 11) {
+    greet = 'Pagi';
+} else if (hrs >= 11 && hrs < 15) {
+    greet = 'Siang';
+} else if (hrs >= 15 && hrs < 19) {
+    greet = 'Sore';
+} else if (hrs >= 19 && hrs <= 24) {
+    greet = 'Malam';
+}
 document.getElementById('waktu_salam').innerHTML =
-'<b> Selamat <span>' + greet + ',</span></b>';
+    '<b> Selamat <span>' + greet + ',</span></b>';
 // <!-- waktu menyapa end -->
 
 // fetch data dynamic skill & project start
@@ -114,7 +114,7 @@ function showProjects(projects) {
     // <!-- Project WebDev -->
     let WebdevProjectsContainer = document.querySelector("#work .webdev .box-container");
     let WebdevProjectHTML = "";
-    projects.slice(0, 10).filter(project => project.category == "webdev").forEach(project => {
+    projects.slice(0, 20).filter(project => project.category == "webdev").forEach(project => {
         WebdevProjectHTML += `
         <div class="box tilt">
       <img draggable="false" src="${project.image}" alt="project" />
@@ -137,7 +137,7 @@ function showProjects(projects) {
     // <!-- Project Instrumentation -->
     let InstruProjectsContainer = document.querySelector("#work .instrumentation .box-container");
     let InstruProjectHTML = "";
-    projects.slice(0, 10).filter(project => project.category == "instrumentation").forEach(project => {
+    projects.slice(0, 20).filter(project => project.category == "instrumentation").forEach(project => {
         InstruProjectHTML += `
         <div class="box tilt">
       <img draggable="false" src="${project.image}" alt="project" />
@@ -157,11 +157,11 @@ function showProjects(projects) {
     });
     InstruProjectsContainer.innerHTML = InstruProjectHTML;
 
-        // <!-- Project MachineLearning -->
-        let MLProjectsContainer = document.querySelector("#work .machine_learning .box-container");
-        let MLProjectHTML = "";
-        projects.slice(0, 10).filter(project => project.category == "ml").forEach(project => {
-            MLProjectHTML += `
+    // <!-- Project MachineLearning -->
+    let MLProjectsContainer = document.querySelector("#work .machine_learning .box-container");
+    let MLProjectHTML = "";
+    projects.slice(0, 20).filter(project => project.category == "ml").forEach(project => {
+        MLProjectHTML += `
             <div class="box tilt">
           <img draggable="false" src="${project.image}" alt="project" />
           <div class="content">
@@ -177,8 +177,8 @@ function showProjects(projects) {
             </div>
           </div>
         </div>`
-        });
-        MLProjectsContainer.innerHTML = MLProjectHTML;
+    });
+    MLProjectsContainer.innerHTML = MLProjectHTML;
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -219,22 +219,22 @@ fetchData("projects").then(data => {
 // pre loader end
 
 // disable developer mode
-document.onkeydown = function(e) {
-  if(e.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+    }
 }
 
 // Start of Tawk.to Live Chat
@@ -259,44 +259,44 @@ const srtop = ScrollReveal({
 });
 
 /* SCROLL HOME */
-srtop.reveal('.home .content h3',{delay: 100}); 
-srtop.reveal('.home .content p',{delay: 100}); 
-srtop.reveal('.home .content .btn',{delay: 100}); 
+srtop.reveal('.home .content h3', { delay: 100 });
+srtop.reveal('.home .content p', { delay: 100 });
+srtop.reveal('.home .content .btn', { delay: 100 });
 
-srtop.reveal('.home .image',{delay: 200}); 
-srtop.reveal('.home .linkedin',{interval: 300}); 
-srtop.reveal('.home .github',{interval: 400}); 
-srtop.reveal('.home .twitter',{interval: 500});
-srtop.reveal('.home .telegram',{interval: 300}); 
-srtop.reveal('.home .instagram',{interval: 300}); 
-srtop.reveal('.home .dev',{interval: 300}); 
+srtop.reveal('.home .image', { delay: 200 });
+srtop.reveal('.home .linkedin', { interval: 300 });
+srtop.reveal('.home .github', { interval: 400 });
+srtop.reveal('.home .twitter', { interval: 500 });
+srtop.reveal('.home .telegram', { interval: 300 });
+srtop.reveal('.home .instagram', { interval: 300 });
+srtop.reveal('.home .dev', { interval: 300 });
 
 
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3',{delay: 150});
-srtop.reveal('.about .content .tag',{delay: 200}); 
-srtop.reveal('.about .content p',{delay: 150}); 
-srtop.reveal('.about .content .box-container',{delay: 150}); 
-srtop.reveal('.about .content .resumebtn',{delay: 150}); 
+srtop.reveal('.about .content h3', { delay: 150 });
+srtop.reveal('.about .content .tag', { delay: 200 });
+srtop.reveal('.about .content p', { delay: 150 });
+srtop.reveal('.about .content .box-container', { delay: 150 });
+srtop.reveal('.about .content .resumebtn', { delay: 150 });
 
 
 /* SCROLL SKILLS */
-srtop.reveal('.skills .web .container',{interval: 100}); 
-srtop.reveal('.skills .web .container .bar',{delay: 200}); 
-srtop.reveal('.skills .other .container',{delay: 200}); 
-srtop.reveal('.skills .other .bar',{interval: 100}); 
+srtop.reveal('.skills .web .container', { interval: 100 });
+srtop.reveal('.skills .web .container .bar', { delay: 200 });
+srtop.reveal('.skills .other .container', { delay: 200 });
+srtop.reveal('.skills .other .bar', { interval: 100 });
 
 /* SCROLL EDUCATION */
-srtop.reveal('.education .box',{interval: 100}); 
+srtop.reveal('.education .box', { interval: 100 });
 
 /* SCROLL PROJECTS */
-srtop.reveal('.work .box',{interval: 100}); 
+srtop.reveal('.work .box', { interval: 100 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline',{delay: 200});
-srtop.reveal('.experience .timeline .container',{interval: 200}); 
+srtop.reveal('.experience .timeline', { delay: 200 });
+srtop.reveal('.experience .timeline .container', { interval: 200 });
 
 /* SCROLL CONTACT */
-srtop.reveal('.contact .container',{delay: 400});
-srtop.reveal('.contact .container .form-group',{delay: 400});
+srtop.reveal('.contact .container', { delay: 400 });
+srtop.reveal('.contact .container .form-group', { delay: 400 });

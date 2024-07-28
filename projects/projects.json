@@ -100,7 +100,7 @@
     },
     {
         "id": 10,
-        "name": "Image Classification Model using TF-Lite",
+        "name": "Image Classification using TF-Lite",
         "desc": "It's a Final project submission of Belajar Pengembangan Machine Learning in Dicoding as Program Beasiswa Cloudeka X Dicoding. This model is using almost 12000 images of 5 kinds flower. It can provide input images from user, and determine what kind of flower is this.",
         "image": "./assests/images/projects/rifqi-flower_detection.webp",
         "links": {
@@ -111,7 +111,7 @@
     },
     {
         "id": 11,
-        "name": "Clickbait Detection using Tensorflow Extended (TFX) and TF Serving",
+        "name": "TFX & TF Serving Clickbait Detection",
         "desc": "This is my final submission project of Machine Learning Operations (MLOps) dengan Cloudeka program at Dicoding Academy. This program was designed to detect some headlines of news and detect whether it's clickbait or not. Its deploying on docker TF server.",
         "image": "./assests/images/projects/rifqi-TFX_MLOPS.png",
         "links": {
