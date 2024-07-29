@@ -130,5 +130,16 @@
             "code": "#"
         },
         "category": "webdev"
+    },
+    {
+        "id": 13,
+        "name": "Loadcell using PSoC",
+        "desc": "This is one of the many projects in the Instrumentation System Practicum course. In This Proj, we are using loadcell and monitoring it via PSoC, also build the program using PSoC Creator",
+        "image": "./assests/images/projects/rifqi-loadcell_PSOC.webp",
+        "links": {
+            "view": "#",
+            "code": "#"
+        },
+        "category": "instrumentation"
     }
 ]
